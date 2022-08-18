@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">4</td><td class="numi">21.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.FirstProject.qa.TestCases.LoginTest<td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.FirstProject.qa.TestCases.RegistrationTest<td><a href="#m2"><b>teardown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">com.FirstProject.qa.TestCases.UtilityMainTest<td><a href="#m3"><b>InitializeBrowser</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedeven"><td rowspan="1">com.FirstProject.qa.TestCases.LoginTest<td><a href="#m4"><b>InitializeBrowser</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr class="failedodd"><td rowspan="2">com.FirstProject.qa.TestCases.RegistrationTest<td><a href="#m5"><b>InitializeBrowser</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m6"><b>FacebookRegistrationPageTest</b>  </a></td><td class="numi">1</td><td class="numi">7704</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.FirstProject.qa.TestCases.LoginTest<td><a href="#m7"><b>teardown</b>  </a></td><td class="numi">1</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.FirstProject.qa.TestCases.LoginTest<td><a href="#m8"><b>FacbookLoginPageTest</b>  </a></td><td class="numi">1</td><td class="numi">1</td></tr>
+</table>
+<h1>Surefire test</h1>
+<a id="m1"></a><h2>com.FirstProject.qa.TestCases.LoginTest:setup</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F4U79NR&apos;, ip: &apos;192.168.0.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:7524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c990902455bea21c6e366b48f02a62a</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)
+<br/>at com.FirstProject.qa.Base.TestBase.InitializeBrowser(TestBase.java:28)
+<br/>at com.FirstProject.qa.TestCases.LoginTest.setup(LoginTest.java:22)
+<br/>31 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.FirstProject.qa.TestCases.RegistrationTest:teardown</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F4U79NR&apos;, ip: &apos;192.168.0.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:7524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c990902455bea21c6e366b48f02a62a</p>
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+<br/>at com.FirstProject.qa.TestCases.RegistrationTest.teardown(RegistrationTest.java:30)
+<br/>31 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.FirstProject.qa.TestCases.UtilityMainTest:InitializeBrowser</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;browser&apos; is required by @Test on method InitializeBrowser
+but has not been marked @Optional or defined </p>
+org.testng.internal.Parameters.createParameters(Parameters.java:144)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1018)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.FirstProject.qa.TestCases.LoginTest:InitializeBrowser</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;browser&apos; is required by @Test on method InitializeBrowser
+but has not been marked @Optional or defined </p>
+org.testng.internal.Parameters.createParameters(Parameters.java:144)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1018)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.FirstProject.qa.TestCases.RegistrationTest:InitializeBrowser</h2>
+<div style="padding-left:3em">
+<p>
+Parameter &apos;browser&apos; is required by @Test on method InitializeBrowser
+but has not been marked @Optional or defined </p>
+org.testng.internal.Parameters.createParameters(Parameters.java:144)
+<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:342)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:433)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1018)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1118)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+<br/>at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:757)
+<br/>at org.testng.TestRunner.run(TestRunner.java:608)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+<br/>at org.testng.TestNG.run(TestNG.java:999)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.FirstProject.qa.TestCases.RegistrationTest:FacebookRegistrationPageTest</h2>
+<div style="padding-left:3em">
+<p>Cannot locate an element using xpath=//a[@title=&apos;Sign up for Facebook&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-F4U79NR&apos;, ip: &apos;192.168.0.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy10.click(Unknown Source)
+<br/>at com.FirstProject.qa.pages.RegistrationPage.clickFacebookLoginPageSignupLink(RegistrationPage.java:37)
+<br/>at com.FirstProject.qa.TestCases.RegistrationTest.FacebookRegistrationPageTest(RegistrationTest.java:37)
+<br/>31 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.FirstProject.qa.TestCases.LoginTest:teardown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>com.FirstProject.qa.TestCases.LoginTest:FacbookLoginPageTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

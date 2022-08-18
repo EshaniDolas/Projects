@@ -1,0 +1,6 @@
+com\FirstProject\qa\pages\RegistrationPage.class
+com\FirstProject\qa\Base\TestBase.class
+com\FirstProject\qa\Utility\Utility.class
+org\openqa\selenium\devtools\v85\page\Page.class
+com\FirstProject\qa\Rough\RoughClass.class
+com\FirstProject\qa\pages\LoginPage.class

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-F4U79NR" failures="0" tests="1" name="com.FirstProject.qa.Base.TestBase" time="0.028" errors="0" timestamp="12 Aug 2022 11:02:23 GMT">
+  <testcase classname="com.FirstProject.qa.TestCases.UtilityMainTest" name="initializeBrowser" time="0.008">
+    <skipped/>
+  </testcase>
+</testsuite>

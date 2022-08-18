@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-F4U79NR" failures="0" tests="2" name="com.FirstProject.qa.Base.TestBase" time="0.182" errors="0" timestamp="12 Aug 2022 17:04:28 GMT">
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="@BeforeClass setup" time="0.0">
+    <failure type="java.lang.IllegalStateException" message="The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html">
+      <![CDATA[java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.FirstProject.qa.Base.TestBase.InitializeBrowser(TestBase.java:19)
+	at com.FirstProject.qa.TestCases.RegistrationTest.setup(RegistrationTest.java:20)
+... Removed 25 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="@AfterClass teardown" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="FacebookRegistrationPageTest" time="0.003">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="InitializeBrowser" time="0.002">
+    <skipped/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-F4U79NR" failures="0" tests="5" name="com.FirstProject.qa.Base.TestBase" time="16.362" errors="0" timestamp="12 Aug 2022 10:28:02 GMT">
+  <testcase classname="com.FirstProject.qa.TestCases.LoginTest" name="FacbookLoginPageTest" time="0.738"/>
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="FacebookRegistrationPageTest" time="3.135"/>
+  <testcase classname="com.FirstProject.qa.TestCases.LoginTest" name="initializeBrowser" time="0.005">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.FirstProject.qa.TestCases.RegistrationTest" name="initializeBrowser" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="com.FirstProject.qa.TestCases.UtilityMain" name="initializeBrowser" time="0.0">
+    <skipped/>
+  </testcase>
+</testsuite>
